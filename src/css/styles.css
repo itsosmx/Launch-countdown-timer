@@ -7,11 +7,12 @@
     --Very-darker-blue: hsl(234, 17%, 12%);
     --Grayish-blue: hsl(237, 18%, 59%);
     --Soft-red: hsl(345, 95%, 68%);
+    --bg-color: hsl(271deg 22% 10%);
 }
 
 body {
     color: hsl(0, 0%, 100%);
-    background-color: var(--Very-dark-blue);
+    background-color: var(--bg-color);
     position: relative;
     padding: 0;
     margin: 0;
@@ -66,6 +67,7 @@ header .title {
     font-size: 4rem;
     padding: 1rem .2rem;
     width: 10vw;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* --Very-dark-blue: hsl(235, 16%, 14%);
@@ -123,7 +125,7 @@ header .title {
 .hills h1 {
     opacity: .5;
     font-size: 1.1rem;
-    bottom: 0;
+    bottom: 2%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -135,4 +137,13 @@ header .title {
 
 .hills h1 em {
     color: var(--Soft-red);
+}
+
+@media screen and (max-width: 960px) {
+    .Timers h2 {
+        font-size: 1rem;
+    }
+    .Timers span {
+        display: none;
+    }
 }

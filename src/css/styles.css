@@ -139,6 +139,16 @@ header .title {
     color: var(--Soft-red);
 }
 
+.hills h1 a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%)
+}
+
+.hills h1 a:hover {
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 0.719)
+}
+
 @media screen and (max-width: 960px) {
     .Timers h2 {
         font-size: 1rem;
